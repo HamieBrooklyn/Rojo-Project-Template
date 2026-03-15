@@ -23,6 +23,7 @@ Pooler = "lewisakura/pooler@1.0.1"
 
 React = "jsdotlua/react@17.2.1"
 ReactRoblox = "jsdotlua/react-roblox@17.2.1"
+Ripple = "littensy/ripple@0.10.1"
 
 SimplePath = "jessekroeske/simplepath@2.2.2"
 Streamable = "sleitnick/streamable@1.2.4"
