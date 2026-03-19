@@ -18,7 +18,7 @@ export type GuiClientMountingService = typeof(GuiClientMountingService) & {}
 -- // PRIVATE FUNCTIONS // --
 
 -- // PUBLIC FUNCTIONS // --
-function GuiClientMountingService.Init(self: GuiClientMountingService): ()
+function GuiClientMountingService.Init(_self: GuiClientMountingService): ()
 	local container = Instance.new("ScreenGui")
 	container.Name = "React"
 	container.IgnoreGuiInset = true
@@ -26,6 +26,7 @@ function GuiClientMountingService.Init(self: GuiClientMountingService): ()
 	container.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 	container.ClipToDeviceSafeArea = true
 	container.Parent = Players.LocalPlayer:WaitForChild("PlayerGui")
+
 	local root = ReactRoblox.createRoot(container)
 	local app = React.createElement(RootUI)
 	root:render(app)
